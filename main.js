@@ -111,24 +111,24 @@ function calculateScores() {
           <tr>
             <th scope="row">1차 지필</th>
             <td>${firstSemester}</td>
-            <td>${firstSemester*examRatio}</td>
+            <td>${(firstSemester*examRatio).toFixed(2)}</td>
           </tr>
           <tr>
             <th scope="row">2차 지필</th>
             <td>${secondSemester}</td>
-            <td>${secondSemester*examRatio}</td>
+            <td>${(secondSemester*examRatio).toFixed(2)}</td>
           </tr>
           <tr>
             <th scope="row">수행평가</th>
             <td>${evaluation}</td>
-            <td>${evaluation}</td>
+            <td>${evaluation.toFixed(2)}</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
             <th scope="row">총합</th>
             <td>${finalExpResult}</td>
-            <td>${finalResult} (${grade})</td>
+            <td><strong>${finalResult} (${grade})</strong></td>
           </tr>
       </table>`;
     }
